@@ -34,7 +34,7 @@ export default {
           json.body.includes("authorized_application")
         )
       ) {
-        return new Response("Nothing to do", { status: 204 });
+        return new Response(null, { status: 204 });
       }
 
       const username = json.event_user_username;
